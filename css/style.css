@@ -34,16 +34,28 @@ header .Nav_rightmenu li{padding: 15px;}
 .allCon .imgBox>div{padding: 10px;}
 .allCon .imgBox img{width: 100%;}
 .allCon .imgBox a{display: block; width: 100%; height: auto; padding: 10px 0; border: 2px solid #111; margin-top: 15px; text-align: center; font-weight: 600; transition: all 0.4s; font-family: 'Open Sans';}
-.allCon .imgBox>div>a:hover {border: 2px solid #045004; color: #045004;}
+/* .allCon .imgBox>div>a:hover {border: 2px solid #045004; color: #045004;} */
+.allCon .imgBox>div>a:hover {background: #045004; color: #fff;}
 
 /* bestproduct style */
-.bestProduct{width: 100%; height: 500px; background: #ddd; display: flex;}
-.bestProduct .Leftbox{width: 60%; height: 100%;} 
+.bestProduct{width: 100%; height: 510px; _background: #bbb; display: flex; }
+.bestProduct .Leftbox{width: 60%; height: 100%; position: relative;} 
 .bestProduct .Leftbox img{width: 100%; height: 100%;}
-.bestProduct .Rightbox{width: 40%; height: 100%;}
-.bestProduct .Rightbox .slidebox{width: 90%; height: 430px; margin: 5% auto; background: #bbb; border-bottom: 1px solid #111;}
+.bestProduct .Leftbox .imgTxt{position: absolute; z-index: 1; color: #fff; text-align: left; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 35px; line-height: 1.5;}
 
-.Rightbox .slidebox img{width: 70%; height: auto; margin: auto;}
-.Rightbox .slidebox span{}
+.Rightbox{width: 40%; height: 100%; border: 0.5px solid #bbb;}
+.Rightbox .slidebox{width: 100%; height: 100%; margin: 20px auto 0; outline: 0;}
+/* .Rightbox .slidebox .slideboxImg{width: 100%; height: 100%; margin: auto;} */
+.Rightbox .slidebox img{width: 70%; height: 70%; margin: auto; }
+.Rightbox .slideboxTit{width: 70%; height: 20%; margin:  2% auto; background: #fff; text-align: center; border-bottom: 1px solid #111; padding-bottom: 5px;}
+.Rightbox .slideboxTit h3{padding: 10px 0 0; font-weight: 500;}
+.Rightbox .slideboxTit span{font-size: 16px; line-height: 1.7; font-weight: 500;}
+.Rightbox .slideboxTit b{display: block; padding: 20px 0 0;}
 
-
+/* slick slider style */
+.Rightbox .slider{width: 100%; height: 100%; margin: auto; _position: relative;}
+.Rightbox .slider .slick-dots{display: flex; justify-content: center; margin: 0; padding: 0; list-style-type: none;}
+.Rightbox .slider .slick-dots li{margin: 10px 5px; display: flex; justify-content: center;}
+.Rightbox .slider .slick-dots li button{display: inline-block; width: 35px; height: 5px; border: none; background: #ccc; text-indent: -9999px;}
+.Rightbox .slider .slick-dots li.slick-active button { background-color: #045004;}
+.Rightbox .slider .slick-arrow{display: none;}

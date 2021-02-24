@@ -9,11 +9,19 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
    <!-- main css link -->
+
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/media.css">
+   <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-   <script src="main.js" defer></script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+   <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="js/main.js" defer></script>
+
 </head>
 <body>
    <div class="wrap">
@@ -97,23 +105,68 @@
       <div class="bestProduct clear">
          <div class="Leftbox">
             <img src="./img/image_08.jpg" alt="">
+            <span class="imgTxt">Nonfiction <br> Best Product</span>
          </div>
          <div class="Rightbox">
-            <div class="slidebox">
-               <img src="./img/body_01.jpg" alt="">
-               <span>GENTLE NIGHT</span>
-               <em>Hand Cream</em>
+            <div class="slider">
+               <div class="slidebox">
+                  <div class=slideboxImg>
+                     <img src="./img/body_01.jpg" alt="">
+                  </div>
+                  <div class="slideboxTit">
+                     <h3>GENTLE NIGHT</h3>
+                     <span>Body Wash</span>
+                     <b>36,000KRW</b>
+                  </div>
+               </div>
+               <div class="slidebox">
+                     <img src="./img/hand_01.jpg" alt="">
+                  <div class="slideboxTit">
+                     <h3>GENTLE NIGHT</h3>
+                     <span>Hand Cream</span>
+                     <b>21,000KRW</b>
+                  </div>
+               </div>
+               <div class="slidebox">
+                     <img src="./img/hand_02.jpg" alt="">
+                  <div class="slideboxTit">
+                     <h3>SANTAL CREAM</h3>
+                     <span>Hand Cream</span>
+                     <b>21,000KRW</b>
+                  </div>
+               </div>
+               <div class="slidebox">
+                     <img src="./img/perfume_03.jpg" alt="">
+                  <div class="slideboxTit">
+                     <h3>GAIAC FLOWER</h3>
+                     <span>Perfume</span>
+                     <b>21,000KRW</b>
+                  </div>
+               </div>
             </div>
+            
          </div>
       </div>
       
 
    </div>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
    <script>
       $(".MenuCate li").hover(function(){
          $(this).find(".submenu").stop().fadeToggle(300);
       });
    </script>
+   <script>
+      $('.slider').slick({
+         infinite: true,
+         dots: true,
+         arrows: false,
+         autoplay: true,
+         autoplaySpeed: 2000,
+      });
+      
+   </script>
+  
+
 </body>
 </html>
