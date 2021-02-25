@@ -70,7 +70,9 @@
       <!-- end of header -->
 
       <div class="banner">
-         <video src="./img/video.mp4" autoplay="autoplay" muted="muted" loop></video>
+         <video src="./img/video.mp4" autoplay="autoplay" muted="muted" loop>
+         </video>
+         <!-- <video src="./img/video.mp4" autoplay="autoplay" muted="muted" loop></video> -->
       </div>
 
       <div class="allSec center clear">
@@ -89,13 +91,13 @@
             <div class="imgBox">
                <div>
                   <img src="./img/image_02.jpg" alt="">
-                  <a href="#">BODY CARE</a>
+                  <a href="#">PERFUME</a>
                </div>
             </div >
             <div class="imgBox">
                <div>
                   <img src="./img/image_03.jpg" alt="">
-                  <a href="#">HAND CARE</a>
+                  <a href="#">BODY CARE</a>
                </div>
             </div >
          </div>
@@ -147,14 +149,80 @@
             
          </div>
       </div>
+      <!-- end of bestProduct -->
+
+      <div class="brandSec ">
+         <div class="LeftCon">
+            <div class="LeftConTxt">
+               <h2>Uncover Your Story</h2>
+               <span>발견 : 나만의 이야기에 귀 기울이는 시간</span>
+               <em>Listening to Your Inner Self</em>
+               <a href="#">Our Story</a>
+            </div>
+         </div>
+         <div class="RightCon ">
+            <img src="./img/banner.png" alt="">
+         </div>
+      </div>
+      <!-- end of brandSec -->
+
+      <div class="productSec center">
+         <div class="title">
+            <h2>HAND CARE</h2>
+         </div>
+         <div class="productCon">
+            <div class="productConBox">
+               <div class="pdimgbox">
+                  <img src="./img/hand_01.jpg" alt="">
+                  <img src="./img/hand_01_01.jpg" alt="">
+               </div>
+               <div class="pdtit">
+                  <h3>GENTLE NIGHT</h3>
+                  <span>30ml / 1.7oz</span>
+                  <b><em>21,000</em> KRW</b>
+               </div>
+            </div>
+            <div class="productConBox">
+               <div class="pdimgbox">
+                  <img src="./img/hand_02.jpg" alt="">
+                  <img src="./img/hand_02_01.jpg" alt="">
+               </div>
+               <div class="pdtit">
+                  <h3>SANTAL CREAM</h3>
+                  <span>30ml / 1.7oz</span>
+                  <b><em>21,000</em> KRW</b>
+               </div>
+            </div><div class="productConBox">
+               <div class="pdimgbox">
+                  <img src="./img/hand_03.jpg" alt="">
+                  <img src="./img/hand_03_01.jpg" alt="">
+               </div>
+               <div class="pdtit">
+                  <h3>GAIAC FLOWER</h3>
+                  <span>30ml / 1.7oz</span>
+                  <b><em>21,000</em> KRW</b>
+               </div>
+            </div><div class="productConBox">
+               <div class="pdimgbox">
+                  <img src="./img/hand_04.jpg" alt="">
+                  <img src="./img/hand_04_01.jpg" alt="">
+               </div>
+               <div class="pdtit">
+                  <h3>IN THE SHOWER</h3>
+                  <span>30ml / 1.7oz</span>
+                  <b><em>21,000</em> KRW</b>
+               </div>
+            </div>
+         </div>
+      </div>
       
 
    </div>
    
    <script>
-      $(".MenuCate li").hover(function(){
-         $(this).find(".submenu").stop().fadeToggle(300);
-      });
+      // $(".MenuCate li").hover(function(){
+      //    $(this).find(".submenu").stop().fadeToggle(300);
+      // });
    </script>
    <script>
       $('.slider').slick({
@@ -163,6 +231,7 @@
          arrows: false,
          autoplay: true,
          autoplaySpeed: 2000,
+
       });
       
    </script>

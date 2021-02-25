@@ -1,44 +1,47 @@
 
 /* Header style */
-header{width: 100%; height: 70px; margin: auto; position: sticky; background: #fff; z-index: 999; left: 0; top: 0;}
+header{width: 100%; height: 70px; margin: auto; position: sticky; background: #fff; z-index: 99; left: 0; top: 0;}
 header .center{width: 100%; height: 100%; display: flex; justify-content: space-between; position: relative;}
 header .center h2{height: 100%; padding: 5px;}
 header .center h2 img{height: 100%;}
 
 header .Nav_menu{display: flex; justify-content: space-between; margin: auto; position: relative;}
 header .Nav_menu .MenuCate{display: flex; justify-content: space-between; align-items: center;}
-header .Nav_menu .MenuCate li{padding: 15px 30px; transition: all 0.4s;}
-header .Nav_menu .MenuCate li a{display: inline-block;}
+header .Nav_menu .MenuCate li{padding: 15px 30px; transition: all 0.4s; position: relative; }
+header .Nav_menu .MenuCate li a{display: inline-block; }
 header .Nav_menu .MenuCate li:hover >a{border-bottom: 1px solid #222;}
 
 
-header .Nav_menu .submenu{display: none; position: absolute; padding-top: 10px; background: #fff; z-index: 999; }
-header .Nav_menu .submenu li{padding: 10px 20px;}
-header .Nav_menu .submenu li a{display: inline-block;}
 
-/* .Navbar_btn {display:none; position: absolute; top: 10px; right: 30px; font-size: 25px;} */
+header .Nav_menu .submenu{display: none; position: absolute; padding-top: 10px; background: #fff; z-index: 999; left: 0; width: 100%;}
+header .Nav_menu .submenu li{padding: 10px 15px; text-align: center; }
+header .Nav_menu .submenu li a{display: inline-block;text-align: center;}
+
+header .Nav_menu .submenu.active{width: 100%; background: #aaa;}
+
+.Navbar_btn {display:none; position: absolute; top: 10px; right: 30px; padding: 8px 5px; font-size: 25px;}
 
 header .Nav_rightmenu{display: flex; align-items: center; padding-right: 0;}
 header .Nav_rightmenu li{padding: 15px;}
 
-.banner{width: 100%; height: 600px; padding: 15px 0;}
-.banner video {width: 100%; height: 100%;}
+.banner{width: 100%; height: auto; padding: 15px 0;}
+.banner video {width: 100%; height: 500px; display: block;}
 
 /* allsection style */
-.allSec{width: 100%; height: auto; padding: 5% 0;}
-.title{display: flex; padding-bottom: 30px;}
-.title p{line-height: 1.5; margin-left: 30px;}
+.allSec{width: 100%; height: auto; margin: 5% auto;}
+.title{display: flex; padding-bottom: 30px; width: 100%;}
+.title p{line-height: 1.5; margin-left: 30px; font-family: 'Noto Sans KR'; font-size: 14px;}
 
 .allCon{width: 100%; height: auto; display: flex; justify-content: space-between; align-items: center;}
 .allCon .imgBox{display: flex; width: 30%; height: auto;}
 .allCon .imgBox>div{padding: 10px;}
 .allCon .imgBox img{width: 100%;}
-.allCon .imgBox a{display: block; width: 100%; height: auto; padding: 10px 0; border: 2px solid #111; margin-top: 15px; text-align: center; font-weight: 600; transition: all 0.4s; font-family: 'Open Sans';}
+.allCon .imgBox a{display: block; width: 100%; height: auto; padding: 10px 0; border: 1px solid #111; margin-top: 15px; text-align: center; font-weight: 600; transition: all 0.4s; font-family: 'Open Sans';}
 /* .allCon .imgBox>div>a:hover {border: 2px solid #045004; color: #045004;} */
 .allCon .imgBox>div>a:hover {background: #045004; color: #fff;}
 
 /* bestproduct style */
-.bestProduct{width: 100%; height: 510px; _background: #bbb; display: flex; }
+.bestProduct{width: 100%; height: 510px; _background: #bbb; display: flex; margin: 5% auto;}
 .bestProduct .Leftbox{width: 60%; height: 100%; position: relative;} 
 .bestProduct .Leftbox img{width: 100%; height: 100%;}
 .bestProduct .Leftbox .imgTxt{position: absolute; z-index: 1; color: #fff; text-align: left; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 35px; line-height: 1.5;}
@@ -59,3 +62,35 @@ header .Nav_rightmenu li{padding: 15px;}
 .Rightbox .slider .slick-dots li button{display: inline-block; width: 35px; height: 5px; border: none; background: #ccc; text-indent: -9999px;}
 .Rightbox .slider .slick-dots li.slick-active button { background-color: #045004;}
 .Rightbox .slider .slick-arrow{display: none;}
+
+/* brandstory style */
+.brandSec{width: 100%; height: 510px;  margin: 5% auto; display: flex;}
+
+.LeftCon{width: 30%; height: 100%;  border: 0.5px solid #bbb; position: relative; }
+.LeftCon .LeftConTxt{width: 100%; position: absolute; padding: 0 10%; top: 50%; transform: translateY(-50%); line-height: 1.5; }
+.LeftCon .LeftConTxt h2{font-weight: 400; padding-bottom: 20px; font-size: 26px; }
+.LeftCon .LeftConTxt span{font-family: 'Noto Sans KR'; font-size: 12px;  display: block;}
+.LeftCon .LeftConTxt em{display: block; font-style: normal; font-family: 'Open Sans';}
+.LeftCon .LeftConTxt a{display: inline-block; width: 70%; height: auto; padding: 10px 0; border: 1px solid #111; margin-top: 15px; text-align: center; font-weight: 600; transition: all 0.4s; font-family: 'Open Sans';}
+.LeftCon .LeftConTxt a:hover{color: #045004;}
+
+.RightCon{width: 70%; height: 100%; }
+.RightCon img{width: 100%; height: 100%;}
+
+/* productSection style */
+.productSec{width: 100%; height: auto; margin: 5% auto;}
+.productCon{width: 100%; height: auto;  display: flex; justify-content: space-between; }
+.productConBox{width: 23%; height: 100%; border-bottom: 1px solid #222;}
+.productConBox .pdimgbox{width: 100%; height: auto;}
+.productConBox .pdimgbox img{width: 100%;}
+.pdimgbox img:last-child{display:none} 
+.pdimgbox:hover img:first-child{display:none} 
+.pdimgbox:hover img:last-child{display:block}
+
+.pdtit{width: 100%; height: auto; margin: 15% 0 5%; }
+.pdtit h3{text-align: center; margin-bottom: 40px; font-size: 18px; font-weight: 500;}
+.pdtit span{font-weight: 500; font-size: 14px;}
+.pdtit b{display: block; float: right; font-size: 14px;}
+.pdtit em{font-style: normal; font-size: 13px;}
+
+

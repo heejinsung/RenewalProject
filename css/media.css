@@ -1,0 +1,43 @@
+@media screen and (max-width:980px){
+   .center{padding: 0 25px;}
+
+   .banner{padding:0 0;}
+   .banner video{height: auto;}
+
+   .bestProduct{height: 450px;}
+   .title p{font-size: 12px;}
+
+
+   .brandSec{height: 450px; }
+   .LeftCon .LeftConTxt h2{font-size: 20px;}
+   .LeftCon .LeftConTxt span,
+   .LeftCon .LeftConTxt em{font-size: 10px;}
+   .LeftCon .LeftConTxt a{width: 70%; text-align: center;}
+}
+
+@media screen and (max-width:768px){
+   header .center {flex-direction: column;}
+   header .center h2 img {padding: 5px 0;}
+
+   header .Nav_menu {display: none; margin: 0; align-items: center; flex-direction: column;}
+   header .Nav_menu .MenuCate {flex-direction: column; text-align: center; width: 100%;}
+   header .Nav_rightmenu { display: none; justify-content: center; width: 100%;}
+   header .Nav_menu .submenu {_width: 100%; position: relative;}
+   .Navbar_btn {display: block;}
+   header .Nav_menu.active,
+   header .Nav_rightmenu.active { display: flex; background: #fff;}
+
+   .allSec h2{font-size: 16px;}
+   .allCon .imgBox a{font-size: 12px;}
+
+   .bestProduct{height: auto;}
+   .bestProduct .Leftbox{width: 68%; height: auto;}
+   .Rigthbox{width: 32%;}
+   .Rightbox .slider .slick-dots li button{width: 23px;}
+
+   .brandSec{height: auto;}
+   .LeftCon{height: auto; width: 35%;}
+   .RightCon{width: 65%;}
+
+}
+
