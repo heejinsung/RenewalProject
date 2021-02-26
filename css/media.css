@@ -22,7 +22,7 @@
    header .Nav_menu {display: none; margin: 0; align-items: center; flex-direction: column;}
    header .Nav_menu .MenuCate {flex-direction: column; text-align: center; width: 100%;}
    header .Nav_rightmenu { display: none; justify-content: center; width: 100%;}
-   header .Nav_menu .submenu {_width: 100%; position: relative;}
+   header .Nav_menu .submenu {width: 100%; position: relative;}
    .Navbar_btn {display: block;}
    header .Nav_menu.active,
    header .Nav_rightmenu.active { display: flex; background: #fff;}
