@@ -27,17 +27,67 @@
    header .Nav_menu.active,
    header .Nav_rightmenu.active { display: flex; background: #fff;}
 
-   .allSec h2{font-size: 16px;}
+   .title h2{font-size: 16px;}
    .allCon .imgBox a{font-size: 12px;}
 
    .bestProduct{height: auto;}
    .bestProduct .Leftbox{width: 68%; height: auto;}
+   .bestProduct .Leftbox .imgTxt {font-size: 30px;}
    .Rigthbox{width: 32%;}
    .Rightbox .slider .slick-dots li button{width: 23px;}
 
    .brandSec{height: auto;}
    .LeftCon{height: auto; width: 35%;}
+   .LeftCon .LeftConTxt a {width: 85%; font-size: 12px; padding: 5px 0;}
+   
    .RightCon{width: 65%;}
+
+   .pdtit h3{font-size: 16px; margin-bottom: 20px;}   
+   .pdtit span, .pdtit b{font-size: 12px; text-align: center; display: block; }
+   .pdtit b{float: none;}
+
+   .stTxtbox{width: 40%;}
+   .stSlider{width: 60%;}
+   .stTxtbox .stocistTit h2{font-size: 16px;}
+   .stTxtbox .stocistTit a{width: 50%; font-size: 12px; padding: 5px;}
+
+   .stTxtbox .location .Loslide h2{font-size: 14px;}
+   .stTxtbox .location .Loslide p{font-size: 12px;}
+   .stSlider .txtbox h2{font-size: 12px;}
 
 }
 
+@media screen and (max-width:600px){
+   .pdtit h3{font-size: 14px;}
+
+   .stocist{height: auto; display: block;}
+   .stTxtbox{width: 100%; text-align: center;}
+   .stTxtbox .location{width: 100%;}
+   .stSlider{width: 100%; margin:0 auto;}
+   .stSlider .stImgbox{height: 350px;}
+}
+
+
+@media screen and (max-width:480px){
+   .Navbar_btn{top: 14px;}
+   .title{padding: 10px;}
+   .title p{display: none;}
+   .title h2{padding: 15px 0;}
+   .allCon{display: block;}
+   .allCon .imgBox{width: 100%;}
+   .bestProduct{display: block;}
+   .bestProduct .Leftbox{width: 100%;}
+   /* .bestProduct .Leftbox .imgTxt{font-size: 40px;} */
+   .Rightbox{width: 100%;}
+   .Rightbox .slider{width: 85%;}
+
+   .brandSec{height: 300px;}
+   .LeftCon .LeftConTxt span, .LeftCon .LeftConTxt em{display: none;}
+   .LeftCon .LeftConTxt h2{font-size: 16px;}
+   .LeftCon{width: 40%;}
+
+   .productCon{display: inline-block;}
+   .productConBox{display: inline-block; width: 45%; margin-bottom: 15px;}
+   .productConBox:nth-child(2),
+   .productConBox:nth-child(4){float: right;}
+}
