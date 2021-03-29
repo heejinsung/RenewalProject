@@ -14,10 +14,11 @@
 ## Feature
 - 미디어 쿼리를 활용한 반응형 제작
 <br>
+
 ## 🛠Tech Stack
-* HTML
-* CSS
-* JavaScript
+- HTML
+- CSS
+- JavaScript
 <br>
 
 ## Plugin
