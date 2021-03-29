@@ -1,7 +1,7 @@
 # NONFICTION website renewal
 뷰티브랜드 논픽션 웹사이트 리뉴얼 프로젝트<br>
 
-<img src="
+<img src="https://user-images.githubusercontent.com/77706805/112871946-c407c780-90fa-11eb-9bf5-520e8d811dbd.png" height="600">
 
 > [nonfiction renewal 사이트](http://shj6837.dothome.co.kr/renewalpj)
 <br>
