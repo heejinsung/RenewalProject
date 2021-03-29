@@ -1,6 +1,7 @@
 # NONFICTION website renewal
 뷰티브랜드 논픽션 웹사이트 리뉴얼 프로젝트<br>
 
+<img src="
 
 > [nonfiction renewal 사이트](http://shj6837.dothome.co.kr/renewalpj)
 <br>
@@ -12,14 +13,14 @@
 
 ## Feature
 - 미디어 쿼리를 활용한 반응형 제작
-
+<br>
 ## 🛠Tech Stack
 * HTML
 * CSS
 * JavaScript
 <br>
 
-## Framework & Plugin
+## Plugin
 | Plugin | README |
 | ------ | ------ |
 | Slick Slider| https://github.com/kenwheeler/slick|
