@@ -2,7 +2,7 @@
 /* Header style */
 header {
     width: 100%;
-    height: 70px;
+    height: 80px;
     margin: auto;
     position: sticky;
     background: #fff;
@@ -19,7 +19,7 @@ header .center {
 }
 header .center h2 {
     height: 100%;
-    padding: 5px;
+    padding: 8px 0;
 }
 header .center h2 img {
     height: 100%;
@@ -180,13 +180,12 @@ header .Nav_rightmenu li {
     outline: 0;
 }
 .Rightbox .slidebox img {
-    width: 60%;
-    height: 60%;
+    width: 57%;
     margin: auto;
 }
 .Rightbox .slideboxTit {
-    width: 70%;
-    height: 20%;
+    width: 80%;
+    /* height: 20%; */
     margin: 2% auto;
     background: #fff;
     text-align: center;
@@ -210,9 +209,8 @@ header .Nav_rightmenu li {
 /* slick slider style */
 .Rightbox .slider {
     width: 100%;
-    height: 100%;
+    height: 80%;
     margin: auto;
-    _position: relative;
 }
 .Rightbox .slider .slick-dots {
     display: flex;
@@ -225,14 +223,16 @@ header .Nav_rightmenu li {
     margin: 10px 5px;
     display: flex;
     justify-content: center;
+    
 }
 .Rightbox .slider .slick-dots li button {
     display: inline-block;
     width: 35px;
-    height: 5px;
+    height: 7px;
     border: none;
     background: #ccc;
     text-indent: -9999px;
+    cursor: pointer;
 }
 .Rightbox .slider .slick-dots li.slick-active button {
     background-color: #222;

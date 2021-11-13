@@ -13,6 +13,7 @@
 body {
     font-size: 14px;
     font-family: 'Newsreader', sans-serif;
+    overflow-x:hidden;
 }
 .clear:after {
     clear: both;
@@ -22,13 +23,12 @@ body {
 .wrap {
     width: 100%;
     height: 100%;
-    _max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 .center {
-    width: 100%;
-    height: auto;
-    max-width: 1300px;
+    width: 100vw;
+    /* height: auto; */
+    max-width: 1200px;
     margin: 0 auto;
 }
 li,
