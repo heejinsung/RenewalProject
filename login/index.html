@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
         <title>Nonfiction</title>
 
         <!-- fontawesome -->
@@ -30,8 +30,11 @@
             type="text/javascript"
             src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-        <script src="../js/main.js" defer="defer"></script>
-        <script src="../js/login.js" defer="defer"></script>
+        <script src="../js/main.js" defer></script>
+        <script src="../js/login.js" defer></script>
+
+        <!-- 네이버 아이디 로그인 초기화 Script -->
+        <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-2.0.0.js" charset="utf-8"></script>
 
     </head>
     <body>
@@ -129,7 +132,7 @@
               </div>
               <div class="snsLogin">
                 <p>간편 로그인</p>
-                <a href="naver-login">
+                <a id="naverIdLogin" href="javascript:void(0)">
                   <img src="../img/naver.png" alt="네이버로그인">
                   <span>Naver</span>
                 </a>
@@ -197,6 +200,23 @@
                 </div>
             </div>
         </footer>
+
+
+    
+
+    <script type="text/javascript">
+      const naverLogin = new naver.LoginWithNaverId(
+			{
+			  clientId: 'oATSSd_1bU_2CUGxnAiE',
+        callbackUrl: 'http://192.168.1.50:5500/login/callback.html/',
+				isPopup: false,
+			}
+		);
+
+      /* 설정정보를 초기화하고 연동을 준비 */
+      naverLogin.init();
+
+    </script>
 
     </body>
 </html>
